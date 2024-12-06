@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../redux/store";
-import { removeItem } from "../redux/itemSlice";
+import { AppDispatch, RootState } from "../redux/store";
+import { removeItem, loadItems, saveItems } from "../redux/itemSlice";
 import { View, Text, Button, FlatList, TouchableOpacity } from "react-native";
 import styles from "../styles/ItemList.styles";
 
 const ItemList: React.FC = () => {
   const items = useSelector((state: RootState) => state.data.items);
-  console.log("Itens no estado:", items);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
+
+  // Carregar itens quando o componente for montado
+  useEffect(() => {
+    dispatch(loadItems());
+  }, [dispatch]);
+
+  // Salvar itens sempre que a lista mudar
+  useEffect(() => {
+    if (items.length > 0) {
+      dispatch(saveItems());
+    }
+  }, [items, dispatch]);
 
   return (
     <FlatList
