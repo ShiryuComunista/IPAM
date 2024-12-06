@@ -9,7 +9,6 @@ import {
   Text,
 } from "react-native";
 import { addItem } from "../redux/itemSlice";
-import { RootState } from "../redux/store";
 import styles from "../styles/AddItem,styles";
 
 const AddItem: React.FC = () => {

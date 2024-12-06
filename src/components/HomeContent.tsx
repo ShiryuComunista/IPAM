@@ -6,8 +6,8 @@ import { setItems } from "../redux/itemSlice";
 import { store } from "../redux/store";
 import { Header } from "react-native/Libraries/NewAppScreen";
 import styles from "../styles/HomeContent.styles";
-import AddItem from "./addItem";
 import ItemList from "./ItemList";
+import AddItem from "./AddItem";
 
 const HomeContent: React.FC = () => {
   const dispatch = useDispatch();
