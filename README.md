@@ -43,12 +43,16 @@ Para rodar o projeto no Expo Go:
 npm run start
 ```
 
+---
+
 ## Tecnologias utilizadas
 
 - React Native: Biblioteca principal para o desenvolvimento.
 - Expo: Framework para simplificar o desenvolvimento e execução de projetos React Native.
 - Redux: Gerenciamento de estado centralizado.
 - TypeScript: Linguagem para adicionar tipos estáticos ao JavaScript.
+  
+---
 
 ## Decisões de Organização do Código
 
