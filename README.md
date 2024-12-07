@@ -1,6 +1,6 @@
 # ItemManagerApp
 
-Bem-vindo ao **ItemManagerApp**, um aplicativo React Native desenvolvido com o Expo ara o processo seletivo do IPAM.
+Bem-vindo ao **ItemManagerApp**, um aplicativo React Native desenvolvido com o Expo para o processo seletivo do IPAM.
 Cujo o objetivo é desenvolver um aplicativo simples para gerenciar uma lista de itens, utilizando Redux para gerenciamento
 de estado e Local Storage para persistir os dados.
 
