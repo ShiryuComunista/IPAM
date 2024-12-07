@@ -31,7 +31,6 @@ const itemSlice = createSlice({
 export const { addItem, removeItem, setItems, clearItems } = itemSlice.actions;
 export default itemSlice.reducer;
 
-// Ação assíncrona para carregar os itens do AsyncStorage
 export const loadItems = () => async (dispatch: any) => {
   try {
     const storedItems = await AsyncStorage.getItem('items');
@@ -43,7 +42,6 @@ export const loadItems = () => async (dispatch: any) => {
   }
 };
 
-// Ação assíncrona para salvar os itens no AsyncStorage
 export const saveItems = () => async (dispatch: any, getState: any) => {
   try {
     const items = getState().data.items;
