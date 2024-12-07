@@ -37,11 +37,26 @@ Para rodar o projeto no Expo Go:
 
 npm run start
 
-
 ## Tecnologias utilizadas
 
 React Native: Biblioteca principal para o desenvolvimento.
 Expo: Framework para simplificar o desenvolvimento e execução de projetos React Native.
 Redux: Gerenciamento de estado centralizado.
-Redux Thunk: Middleware para ações assíncronas no Redux.
 TypeScript: Linguagem para adicionar tipos estáticos ao JavaScript.
+
+## Decisões de Organização do Código
+
+### Estrutura de pastas:
+O projeto está organizado em três principais diretórios:
+- components: contém os componentes reutilizáveis da interface do usuário.
+- redux: gerencia o estado global do aplicativo, com separação clara entre actions, reducers e store.
+- styles: contém arquivos para centralizar a estilização e facilitar a consistência visual.
+
+### Persistência de Dados:
+- Utilize o AsyncStorage para persistir os dados localmente.
+- A integração foi realizada dentro do Redux, garantindo que os dados sejam sincronizados automaticamente ao iniciar o aplicativo.
+
+### Estilo:
+- A estilização segue uma abordagem simples, utilizando uma combinação de estilos inline e centralizados na pasta styles.
+
+Espero que a estrutura e a funcionalidade estejam alinhadas com as expectativas e sejam fáceis de compreender e expandir, caso necessário.
