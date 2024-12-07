@@ -24,8 +24,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 ### 1 - Clonar o repositório
 Clone o projeto em sua máquina local:
 
-git clone https://github.com/seu-usuario/itemmanagerapp.git
-cd itemmanagerapp
+git clone https://github.com/ShiryuComunista/IPAM.git
+cd IPAM
 
 ### 2 - Instalar dependências
 Instale as dependências do projeto:
