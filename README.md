@@ -24,25 +24,31 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 ### 1 - Clonar o repositório
 Clone o projeto em sua máquina local:
 
+```bash
 git clone https://github.com/ShiryuComunista/IPAM.git
 cd IPAM
+```
 
 ### 2 - Instalar dependências
 Instale as dependências do projeto:
 
+```bash
 npm install
+```
 
 ### 3 - Executar o aplicativo com Expo Go
 Para rodar o projeto no Expo Go:
 
+```bash
 npm run start
+```
 
 ## Tecnologias utilizadas
 
-React Native: Biblioteca principal para o desenvolvimento.
-Expo: Framework para simplificar o desenvolvimento e execução de projetos React Native.
-Redux: Gerenciamento de estado centralizado.
-TypeScript: Linguagem para adicionar tipos estáticos ao JavaScript.
+- React Native: Biblioteca principal para o desenvolvimento.
+- Expo: Framework para simplificar o desenvolvimento e execução de projetos React Native.
+- Redux: Gerenciamento de estado centralizado.
+- TypeScript: Linguagem para adicionar tipos estáticos ao JavaScript.
 
 ## Decisões de Organização do Código
 
